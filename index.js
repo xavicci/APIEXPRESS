@@ -7,6 +7,7 @@ const {
   logErrors,
   boomErrorHandler,
 } = require('./middlewares/errorHandler');
+
 const app = express();
 const port = 3000;
 
