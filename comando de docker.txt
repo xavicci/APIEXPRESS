@@ -1,5 +1,5 @@
 sudo docker-compose up -d [nombre_servicio] // crear un servicio
-sudo docker-compoise down [nombre_servicio] // bajar un servicio
+sudo docker-compose down [nombre_servicio] // bajar un servicio
 
 sudo docker-compose exec [nombre_servicio] bash // para conectarnos al servicio
 psql -h localhost -d my_store -U xavi

@@ -1,6 +1,6 @@
-// eslint-disable-next-line no-unused-vars
 const boom = require('@hapi/boom');
-const { models } = require('../libs/sequelize');
+
+const { models } = require('./../libs/sequelize');
 
 class UserService {
   constructor() {}
@@ -11,7 +11,9 @@ class UserService {
   }
 
   async find() {
-    const rta = await models.User.findAll();
+    const rta = await models.User.findAll({
+      include: ['customer']
+    });
     return rta;
   }
 
